@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace _4patas.Controllers
 {
-    [Authorize]
     public class CompraController : Controller
     {
         private readonly ApplicationDbContext _context;
