@@ -73,7 +73,7 @@ namespace _4patas.Controllers
         public async Task<IActionResult> Create([Bind("Id,Nome,Cpf, Description,ImageFile")] Usuario usuario)
         {
 
-            int _animalId = int.Parse(Request.Form["Animl"].ToString());
+            int _animalId = int.Parse(Request.Form["Animal"].ToString());
             var animal = _context.Animal.FirstOrDefault(e => e.Id == _animalId);
             usuario.Animal = animal;
 
